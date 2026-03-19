@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posiciones HTML</title>
+
+    <style>
+        .body{
+            font-family: sans-serif;
+            height: 2000px; /*para forzar el scroll*/
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        .contenedor{
+            position: relative;
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: dashed 5px #333;
+            padding: 20px;
+        }
+        .caja-absoluta{
+            background-color: #b1a394;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 150px;
+            padding: 15px;
+            color:#ffffff ;
+           
+
+        }
+        .caja-fija{
+            background-color: #c9b39c;
+            color: #ffffff ;
+            padding: 15px;
+            width: 150px;
+            border-radius:10px ;
+            box-shadow: #6a6157;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Posicionamiento con CSS</h1>
+    <h3>Existen varias formas de posicionar un elemento HTML con CSS</h3>
+    <h3>Haz scroll  para ver la diferencia</h3>
+    <div class="contenedor">
+        <h2>Soy el contenedor (relative)</h2>
+        <p>Tengo una caja roja dentro con <strong>position: absolute</strong></p>
+        <div class="caja-absoluta">
+            <strong>ABSOLUTE</strong> <br>
+            Me quedo en la esquina de mi padre.
+        </div>
+        <div class="caja-fija">
+            <strong>CAJA FIJA</strong> <br>
+            Yo no me muevo de aqui, pase lo que pase.
+        </div>
+    </div>
+</body>
+</html>
